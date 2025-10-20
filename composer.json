@@ -1,5 +1,5 @@
 {
-    "name": "agence104/livekit-server-sdk",
+    "name": "singlecomm/livekit-server-sdk",
     "description": "Server-side SDK for LiveKit.",
     "type": "library",
     "license": "MIT",
@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "php": "^8.1",
+        "php": "^7.4|^8.0",
         "firebase/php-jwt": "^6.8",
         "twirp/twirp": "^0.9.1|^0.14.0",
         "google/protobuf": "^3.23|^4.0",
