@@ -51,8 +51,10 @@ class EgressServiceClient extends BaseServiceClient {
    *   The output parameters as an array.
    */
   public function getOutputParams(
-    EncodedOutputs|EncodedFileOutput|StreamOutput|SegmentedFileOutput|ImageOutput $output,
-    EncodingOptionsPreset|EncodingOptions|null $options = NULL
+    // EncodedOutputs|EncodedFileOutput|StreamOutput|SegmentedFileOutput|ImageOutput
+    $output,
+    // EncodingOptionsPreset|EncodingOptions|null
+    $options = NULL
   ): array {
     $file = NULL;
     $fileOutputs = NULL;
@@ -134,8 +136,10 @@ class EgressServiceClient extends BaseServiceClient {
   public function startRoomCompositeEgress(
     string $roomName,
     string $layout,
-    EncodedOutputs|EncodedFileOutput|StreamOutput|SegmentedFileOutput|ImageOutput $output,
-    EncodingOptionsPreset|EncodingOptions|null $options = NULL,
+    // EncodedOutputs|EncodedFileOutput|StreamOutput|SegmentedFileOutput|ImageOutput
+    $output,
+    // EncodingOptionsPreset|EncodingOptions|null
+    $options = NULL,
     bool $audioOnly = FALSE,
     bool $videoOnly = FALSE,
     string $customBaseUrl = ''
@@ -214,8 +218,10 @@ class EgressServiceClient extends BaseServiceClient {
    */
   public function startWebEgress(
     string $url,
-    EncodedOutputs|EncodedFileOutput|StreamOutput|SegmentedFileOutput|ImageOutput $output,
-    EncodingOptionsPreset|EncodingOptions|null $options = NULL,
+    // EncodedOutputs|EncodedFileOutput|StreamOutput|SegmentedFileOutput|ImageOutput
+    $output,
+    // EncodingOptionsPreset|EncodingOptions|null
+    $options = NULL,
     bool $audioOnly = FALSE,
     bool $videoOnly = FALSE,
     bool $awaitStartSignal = FALSE
@@ -293,10 +299,12 @@ class EgressServiceClient extends BaseServiceClient {
    */
   public function startTrackCompositeEgress(
     string $roomName,
-    EncodedOutputs|EncodedFileOutput|StreamOutput|SegmentedFileOutput|ImageOutput $output,
+    // EncodedOutputs|EncodedFileOutput|StreamOutput|SegmentedFileOutput|ImageOutput
+    $output,
     string $audioTrackId = '',
     string $videoTrackId = '',
-    EncodingOptionsPreset|EncodingOptions|null $options = NULL,
+    // EncodingOptionsPreset|EncodingOptions|null
+    $options = NULL,
   ): EgressInfo {
     [
       $file,
@@ -366,7 +374,8 @@ class EgressServiceClient extends BaseServiceClient {
    */
   public function startTrackEgress(
     string $roomName,
-    DirectFileOutput|string $output,
+    // DirectFileOutput|string
+    $output,
     string $trackId
   ): EgressInfo {
     // Set the request data.
