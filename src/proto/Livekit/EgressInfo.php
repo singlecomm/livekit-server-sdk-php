@@ -509,13 +509,13 @@ class EgressInfo extends \Google\Protobuf\Internal\Message
      */
     public function getStream()
     {
-        @trigger_error('stream is deprecated.', E_USER_DEPRECATED);
+        // @trigger_error('stream is deprecated.', E_USER_DEPRECATED);
         return $this->readOneof(7);
     }
 
     public function hasStream()
     {
-        @trigger_error('stream is deprecated.', E_USER_DEPRECATED);
+        // @trigger_error('stream is deprecated.', E_USER_DEPRECATED);
         return $this->hasOneof(7);
     }
 
@@ -527,7 +527,7 @@ class EgressInfo extends \Google\Protobuf\Internal\Message
      */
     public function setStream($var)
     {
-        @trigger_error('stream is deprecated.', E_USER_DEPRECATED);
+        // @trigger_error('stream is deprecated.', E_USER_DEPRECATED);
         GPBUtil::checkMessage($var, \Livekit\StreamInfoList::class);
         $this->writeOneof(7, $var);
 
@@ -541,13 +541,13 @@ class EgressInfo extends \Google\Protobuf\Internal\Message
      */
     public function getFile()
     {
-        @trigger_error('file is deprecated.', E_USER_DEPRECATED);
+        // @trigger_error('file is deprecated.', E_USER_DEPRECATED);
         return $this->readOneof(8);
     }
 
     public function hasFile()
     {
-        @trigger_error('file is deprecated.', E_USER_DEPRECATED);
+        // @trigger_error('file is deprecated.', E_USER_DEPRECATED);
         return $this->hasOneof(8);
     }
 
@@ -559,7 +559,7 @@ class EgressInfo extends \Google\Protobuf\Internal\Message
      */
     public function setFile($var)
     {
-        @trigger_error('file is deprecated.', E_USER_DEPRECATED);
+        // @trigger_error('file is deprecated.', E_USER_DEPRECATED);
         GPBUtil::checkMessage($var, \Livekit\FileInfo::class);
         $this->writeOneof(8, $var);
 
@@ -573,13 +573,13 @@ class EgressInfo extends \Google\Protobuf\Internal\Message
      */
     public function getSegments()
     {
-        @trigger_error('segments is deprecated.', E_USER_DEPRECATED);
+        // @trigger_error('segments is deprecated.', E_USER_DEPRECATED);
         return $this->readOneof(12);
     }
 
     public function hasSegments()
     {
-        @trigger_error('segments is deprecated.', E_USER_DEPRECATED);
+        // @trigger_error('segments is deprecated.', E_USER_DEPRECATED);
         return $this->hasOneof(12);
     }
 
@@ -591,7 +591,7 @@ class EgressInfo extends \Google\Protobuf\Internal\Message
      */
     public function setSegments($var)
     {
-        @trigger_error('segments is deprecated.', E_USER_DEPRECATED);
+        // @trigger_error('segments is deprecated.', E_USER_DEPRECATED);
         GPBUtil::checkMessage($var, \Livekit\SegmentsInfo::class);
         $this->writeOneof(12, $var);
 

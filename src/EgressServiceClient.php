@@ -36,7 +36,11 @@ class EgressServiceClient extends BaseServiceClient {
    */
   public function __construct(?string $host = NULL, ?string $apiKey = NULL, ?string $apiSecret = NULL) {
     parent::__construct($host, $apiKey, $apiSecret);
-    $this->rpc = new EgressClient($this->host);
+
+    $guzzle = new \GuzzleHttp\Client();
+    $psr18Client = new \Http\Adapter\Guzzle6\Client($guzzle);
+
+    $this->rpc = new EgressClient($this->host, $psr18Client);
   }
 
   /**
@@ -304,7 +308,7 @@ class EgressServiceClient extends BaseServiceClient {
     string $audioTrackId = '',
     string $videoTrackId = '',
     // EncodingOptionsPreset|EncodingOptions|null
-    $options = NULL,
+    $options = NULL
   ): EgressInfo {
     [
       $file,

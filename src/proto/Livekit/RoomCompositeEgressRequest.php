@@ -277,13 +277,13 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
      */
     public function getFile()
     {
-        @trigger_error('file is deprecated.', E_USER_DEPRECATED);
+        // @trigger_error('file is deprecated.', E_USER_DEPRECATED);
         return $this->readOneof(6);
     }
 
     public function hasFile()
     {
-        @trigger_error('file is deprecated.', E_USER_DEPRECATED);
+        // @trigger_error('file is deprecated.', E_USER_DEPRECATED);
         return $this->hasOneof(6);
     }
 
@@ -295,7 +295,7 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
      */
     public function setFile($var)
     {
-        @trigger_error('file is deprecated.', E_USER_DEPRECATED);
+        // @trigger_error('file is deprecated.', E_USER_DEPRECATED);
         GPBUtil::checkMessage($var, \Livekit\EncodedFileOutput::class);
         $this->writeOneof(6, $var);
 
@@ -309,13 +309,13 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
      */
     public function getStream()
     {
-        @trigger_error('stream is deprecated.', E_USER_DEPRECATED);
+        // @trigger_error('stream is deprecated.', E_USER_DEPRECATED);
         return $this->readOneof(7);
     }
 
     public function hasStream()
     {
-        @trigger_error('stream is deprecated.', E_USER_DEPRECATED);
+        // @trigger_error('stream is deprecated.', E_USER_DEPRECATED);
         return $this->hasOneof(7);
     }
 
@@ -327,7 +327,7 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
      */
     public function setStream($var)
     {
-        @trigger_error('stream is deprecated.', E_USER_DEPRECATED);
+        // @trigger_error('stream is deprecated.', E_USER_DEPRECATED);
         GPBUtil::checkMessage($var, \Livekit\StreamOutput::class);
         $this->writeOneof(7, $var);
 
@@ -341,13 +341,13 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
      */
     public function getSegments()
     {
-        @trigger_error('segments is deprecated.', E_USER_DEPRECATED);
+        // @trigger_error('segments is deprecated.', E_USER_DEPRECATED);
         return $this->readOneof(10);
     }
 
     public function hasSegments()
     {
-        @trigger_error('segments is deprecated.', E_USER_DEPRECATED);
+        // @trigger_error('segments is deprecated.', E_USER_DEPRECATED);
         return $this->hasOneof(10);
     }
 
@@ -359,7 +359,7 @@ class RoomCompositeEgressRequest extends \Google\Protobuf\Internal\Message
      */
     public function setSegments($var)
     {
-        @trigger_error('segments is deprecated.', E_USER_DEPRECATED);
+        // @trigger_error('segments is deprecated.', E_USER_DEPRECATED);
         GPBUtil::checkMessage($var, \Livekit\SegmentedFileOutput::class);
         $this->writeOneof(10, $var);
 
